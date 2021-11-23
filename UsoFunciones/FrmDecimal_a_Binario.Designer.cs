@@ -41,6 +41,7 @@ namespace UsoFunciones
             this.Binario2 = new System.Windows.Forms.CheckBox();
             this.Binario1 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,6 +85,7 @@ namespace UsoFunciones
             this.Binario8.Size = new System.Drawing.Size(18, 17);
             this.Binario8.TabIndex = 7;
             this.Binario8.UseVisualStyleBackColor = true;
+            this.Binario8.CheckedChanged += new System.EventHandler(this.Binario1_CheckedChanged);
             // 
             // Binario7
             // 
@@ -93,6 +95,7 @@ namespace UsoFunciones
             this.Binario7.Size = new System.Drawing.Size(18, 17);
             this.Binario7.TabIndex = 6;
             this.Binario7.UseVisualStyleBackColor = true;
+            this.Binario7.CheckedChanged += new System.EventHandler(this.Binario1_CheckedChanged);
             // 
             // Binario6
             // 
@@ -102,6 +105,7 @@ namespace UsoFunciones
             this.Binario6.Size = new System.Drawing.Size(18, 17);
             this.Binario6.TabIndex = 5;
             this.Binario6.UseVisualStyleBackColor = true;
+            this.Binario6.CheckedChanged += new System.EventHandler(this.Binario1_CheckedChanged);
             // 
             // Binario5
             // 
@@ -111,6 +115,7 @@ namespace UsoFunciones
             this.Binario5.Size = new System.Drawing.Size(18, 17);
             this.Binario5.TabIndex = 4;
             this.Binario5.UseVisualStyleBackColor = true;
+            this.Binario5.CheckedChanged += new System.EventHandler(this.Binario1_CheckedChanged);
             // 
             // Binario4
             // 
@@ -120,7 +125,7 @@ namespace UsoFunciones
             this.Binario4.Size = new System.Drawing.Size(18, 17);
             this.Binario4.TabIndex = 3;
             this.Binario4.UseVisualStyleBackColor = true;
-            this.Binario4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
+            this.Binario4.CheckedChanged += new System.EventHandler(this.Binario1_CheckedChanged);
             // 
             // Binario3
             // 
@@ -130,6 +135,7 @@ namespace UsoFunciones
             this.Binario3.Size = new System.Drawing.Size(18, 17);
             this.Binario3.TabIndex = 2;
             this.Binario3.UseVisualStyleBackColor = true;
+            this.Binario3.CheckedChanged += new System.EventHandler(this.Binario1_CheckedChanged);
             // 
             // Binario2
             // 
@@ -139,6 +145,7 @@ namespace UsoFunciones
             this.Binario2.Size = new System.Drawing.Size(18, 17);
             this.Binario2.TabIndex = 1;
             this.Binario2.UseVisualStyleBackColor = true;
+            this.Binario2.CheckedChanged += new System.EventHandler(this.Binario1_CheckedChanged);
             // 
             // Binario1
             // 
@@ -148,6 +155,7 @@ namespace UsoFunciones
             this.Binario1.Size = new System.Drawing.Size(18, 17);
             this.Binario1.TabIndex = 0;
             this.Binario1.UseVisualStyleBackColor = true;
+            this.Binario1.CheckedChanged += new System.EventHandler(this.Binario1_CheckedChanged);
             // 
             // button1
             // 
@@ -159,11 +167,22 @@ namespace UsoFunciones
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(728, 93);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(181, 115);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "binario a decimal";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // FrmDecimal_a_Binario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1001, 450);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtentero);
@@ -191,5 +210,6 @@ namespace UsoFunciones
         private System.Windows.Forms.CheckBox Binario2;
         private System.Windows.Forms.CheckBox Binario1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

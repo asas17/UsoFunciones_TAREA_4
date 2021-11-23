@@ -116,9 +116,37 @@ namespace UsoFunciones
             return bin;
         }
 
-        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
+            int num = 0;
+            if (Binario1.Checked) num += 1;
+            if (Binario2.Checked) num += 2;
+            if (Binario3.Checked) num += 4;
+            if (Binario4.Checked) num += 8;
+            if (Binario5.Checked) num += 16;
+            if (Binario6.Checked) num += 32;
+            if (Binario7.Checked) num += 64;
+            if (Binario8.Checked) num += 128;
+            this.txtentero.Text = num.ToString();
 
+        }
+
+        private void Binario1_CheckedChanged(object sender, EventArgs e)
+        {
+            SumaBinarioaDecimal();
+        }
+        void SumaBinarioaDecimal()
+        {
+            int num = 0;
+            if (Binario1.Checked) num += 1;
+            if (Binario2.Checked) num += 2;
+            if (Binario3.Checked) num += 4;
+            if (Binario4.Checked) num += 8;
+            if (Binario5.Checked) num += 16;
+            if (Binario6.Checked) num += 32;
+            if (Binario7.Checked) num += 64;
+            if (Binario8.Checked) num += 128;
+            this.txtentero.Text = num.ToString();
         }
     }
 }
